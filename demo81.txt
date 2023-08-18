@@ -1,0 +1,62 @@
+1.What is an exception?
+
+An exception in Java is an event that disrupts the normal flow of a program's execution. 
+
+2.How many ways to handle exceptions?
+
+There are two ways to handle exceptions in Java:
+
+a. Using try and catch blocks
+
+b. Using throws keyword
+
+
+3.Difference between checked and unchecked exceptions?
+
+Checked exceptions are exceptions that are checked at compile-time, meaning you must either catch them using a try-catch block or declare them using the throws keyword.
+
+Unchecked exceptions (also known as runtime exceptions) are exceptions that are not checked at compile-time. They usually result from programming errors and can be caught if desired, but you're not forced to handle them.
+
+
+4.What is try and catch?
+
+try and catch are keywords used for exception handling in Java.
+
+try: This block encloses the code that may raise an exception.
+catch: This block follows a try block and contains code that handles the exception if it occurs. Multiple catch blocks can be used to handle different types of exceptions.
+
+
+
+5.Difference between throw and throws and difference between final and finally?
+
+throw is used to explicitly throw an exception in Java. You can create and throw your own exceptions or throw predefined exceptions.
+throws is used in the method signature to declare that a method might throw an exception. It is used to delegate the responsibility of handling exceptions to the calling method.
+final is used as a keyword to indicate that a variable, method, or class cannot be changed or overridden.
+finally is a block of code that follows a try or try-catch block. It is executed regardless of whether an exception occurs or not. It's often used for cleanup operations.
+6.List 5 checked exceptions:
+
+IOException
+SQLException
+FileNotFoundException
+ClassNotFoundException
+InterruptedException
+
+7.List 5 unchecked exceptions:
+
+NullPointerException
+ArrayIndexOutOfBoundsException
+ArithmeticException
+IllegalArgumentException
+RuntimeException
+
+8.Steps to create a custom exception:
+
+To create a custom exception in Java, you need to create a new class that extends either Exception (for checked exceptions) or RuntimeException (for unchecked exceptions). Here are the steps:
+
+a. Create a new class that extends Exception or RuntimeException.
+b. Create constructors that call the corresponding constructors of the superclass.
+c. Optionally, you can add custom methods or fields specific to your custom exception.
+
+9.What is Throwable?
+
+Throwable is the base class for all exceptions and errors in Java. It serves as the superclass for both checked exceptions (subclasses of Exception) and unchecked exceptions (subclasses of RuntimeException). It also includes the Error class, which represents severe system-level errors that are usually beyond the control of the application.
